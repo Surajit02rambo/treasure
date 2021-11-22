@@ -1,0 +1,1737 @@
+.abs, h2:after, .cards .card figcaption, .cards .card:after, .news .card figcaption, .news .card:after, .news .article figcaption {
+    position: absolute;
+}
+.rel, h2, h2 strong, .cards .card, .news .card, .news .article {
+    position: relative;
+}
+.fix {
+    position: fixed;
+}
+.dfix {
+    display: inline;
+}
+.dib {
+    display: inline-block;
+}
+.db {
+    display: block;
+}
+.dn {
+    display: none;
+}
+.df, .cards, .news {
+    display: flex;
+}
+.dif {
+    display: inline-flex;
+}
+.dg {
+    display: grid;
+}
+.dig {
+    display: inline-grid;
+}
+.vm, h2, h2 strong, h2 span {
+    vertical-align: middle;
+}
+.wrapper {
+    padding: 15px;
+}
+h2 {
+    padding: 10px;
+    padding-left: 20px;
+    color: #ccc;
+    margin: 0;
+}
+h1 {
+
+  padding-left: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 1000px;
+  letter-spacing: 6.5px;
+  margin: 0;
+  padding-top: 50px;
+  text-decoration: underline;
+}
+h2 strong {
+    z-index: 2;
+   
+    padding: 4px 8px;
+}
+h2 span {
+    font-size: 0.7em;
+    color: #aaa;
+    margin-left: 10px;
+}
+h2:after {
+    content: '';
+    z-index: 1;
+    bottom: 50%;
+    margin-bottom: -2px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    
+}
+.cards, .news {
+    flex-flow: row wrap;
+}
+.cards .card, .news .card {
+    margin: 13px;
+    margin-left: 22.5px;
+    width: 210px;
+    height: 310px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+    transform-style: preserve-3d;
+    transition: 0.8s;
+    border-radius: 20px;
+    box-shadow: -2px -2px 4px whitesmoke,
+                 2px 2px 4px whitesmoke;
+}
+.cards .card img, .news .card img {
+    width: 100%;
+    min-height: 100%;
+}
+
+ /* .cards .card:after, .news .card:after {
+    content: '';
+    z-index: 10;
+    width: 200%;
+    height: 100%;
+    top: -90%;
+    left: -20px;
+    opacity: 0.1;
+    background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+    transition: 0.3s; */
+p{
+    font-size: 12px;
+}
+.cards .card:hover, .news .card:hover, .cards .card:focus, .news .card:focus, .cards .card:active, .news .card:active {
+    box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
+    transform: scale(1.12);
+    box-shadow: -2px -2px 4px whitesmoke,
+                 2px 2px 4px whitesmoke;
+}
+.cards .card:hover figcaption, .news .card:hover figcaption, .cards .card:focus figcaption, .news .card:focus figcaption, .cards .card:active figcaption, .news .card:active figcaption {
+    transform: none;
+}
+ .cards .card:hover:after, .news .card:hover:after, .cards .card:focus:after, .news .card:focus:after, .cards .card:active:after, .news .card:active:after {
+    transform: rotate(25deg);
+    top: 0%;
+    opacity: 0.15;
+} 
+
+/* Card1 start */
+.sidenav {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+
+  /* card1 ends */
+
+  /* card2 starts */
+  .sidenav1 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav1 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav1 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav1 .closebtn1 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav1 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav1 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav1 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav1 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav1 .closebtn1 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+
+  /* card2 ends */
+
+  /* car3 starts */
+  .sidenav2 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav2 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav2 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav2 .closebtn2 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav2 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav2 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav2 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav2 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav2 .closebtn2 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card3 ends */
+
+   /* car4 starts */
+   .sidenav3 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav3 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav3 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav3 .closebtn3 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav3 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav3 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav3 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav3 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav3 .closebtn3 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card4 ends */
+
+   /* car5 starts */
+   .sidenav4 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav4 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav4 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav4 .closebtn4 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav4 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav4 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav4 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav4 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav4 .closebtn4 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card5 ends */
+
+   /* car6 starts */
+   .sidenav5 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav5 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav5 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav5 .closebtn5 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav5 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav5 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav5 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav5 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav5 .closebtn5 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card6 ends */
+
+   /* car7 starts */
+   .sidenav6 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav6 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav6 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav6 .closebtn6 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav6 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav6 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav6 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav6 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav6 .closebtn6 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card7 ends */
+
+   /* car8 starts */
+   .sidenav7 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav7 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav7 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav7 .closebtn7 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav7 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav7 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav7 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav7 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav7 .closebtn7 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card8 ends */
+
+   /* car9 starts */
+   .sidenav8 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav8 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav8 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav8 .closebtn8 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav8 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav8 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav8 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav8 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav8 .closebtn8 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card9 ends */
+
+   /* card10 starts */
+   .sidenav9 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav9 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav9 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav9 .closebtn9 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav9 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav9 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav9 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav9 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav9 .closebtn9 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card10 ends */
+
+   /* card11 starts */
+   .sidenav10 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav10 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav10 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav10 .closebtn10 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav10 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav10 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav10 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav10 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav10 .closebtn9 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card11 ends */
+
+   /* card12 starts */
+   .sidenav11 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav11 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav11 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav11 .closebtn11 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav11 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav11 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav11 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav11 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav11 .closebtn11 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card12 ends */
+
+   /* card13 starts */
+   .sidenav12 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav12 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav12 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav12 .closebtn12 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav12 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav12 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav12 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav12 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav12 .closebtn12 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card13 ends */
+
+   /* card14 starts */
+   .sidenav13 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav13 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav13 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav13 .closebtn13 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav13 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav13 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav13 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav13 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav13 .closebtn13 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card14 ends */
+
+   /* card15 starts */
+   .sidenav14 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav14 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav14 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav14 .closebtn14 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+  
+    .sidenav14 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav14 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav14 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav14 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav14 .closebtn14 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card15 ends */
+
+   /* card16 starts */
+   .sidenav15 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav15 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav15 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav15 .closebtn15 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav15 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav15 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav15 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav15 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav15 .closebtn15 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card16 ends */
+
+   /* card17 starts */
+   .sidenav16 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav16 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav16 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav16 .closebtn16 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav16 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav16 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav16 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav16 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav16 .closebtn16 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card17 ends */
+
+   /* card18 starts */
+   .sidenav17 {
+    position: fixed;
+    height: 310px;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 1, 20, 0.904);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .sidenav17 a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #110101;
+    display: block;
+    cursor: none;
+  }
+  
+  .sidenav17 a:hover {
+    color: #141014;
+    cursor: none;
+  }
+  
+  .sidenav17 .closebtn17 {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    cursor: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+    .sidenav17 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+        }
+    .sidenav17 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 400px) {
+    
+    .sidenav17 {
+         padding-top: 15px;
+         cursor: none;
+         height: 201px;
+         max-width: 137px;
+         position: fixed;
+        }
+    .sidenav17 a {
+        font-size: 8px; 
+        cursor: none;
+    }
+    .sidenav17 .closebtn17 {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        cursor: none;
+      }
+
+  }
+  /* card18 ends */
+
+  span i{
+      position: absolute;
+      font-size: 20px;
+      background-color: rgba(26, 6, 26, 0.829);
+      padding: 10px;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      margin-left: 15px;
+      bottom: 15px;
+      box-shadow: -2px -2px 4px whitesmoke,
+                 2px 2px 4px whitesmoke;
+                 cursor: none;
+   
+  }
+
+  .search-box {
+  position: absolute;
+  top : 62%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  background: #14011b;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  
+}
+
+.search-box:hover > .search-text{
+  width: 170px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+ 
+  color: rgb(255, 0, 98);
+  
+}
+
+.search-btn {
+  color: #ffffff;
+  float: right;
+  width: 37px;
+  height:37px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: -8px;
+  
+}
+.search-btn > i {
+  font-size: 28px;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: normal;
+  transition: 0.4s;
+  line-height: 0px;
+  width: 0px;
+  
+/*   width: 250px; */
+}
+
+
+h5{
+	font-size: 10px;
+	color: rgb(255, 198, 11);
+}
+p{
+	font-size: 8.5px;
+}
+h6{
+	font-size: 12px;
+	color: rgb(255, 198, 11);
+}
+h6{
+	font-size: 12px;
+	color: rgb(255, 198, 11);
+}
+
+i{
+	font-size: 20px;
+}
+
+.cinema{
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.film{
+  display: block;
+  justify-content: center;
+  width: 150px;
+  line-height: 20px;
+  background: rgb(255, 196, 4);
+  text-align: center;
+  text-decoration: none;
+  color: rgb(19, 1, 1);
+  font-size: 15px;
+  font-weight: 730;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+top: -10px;
+}
+
+.film:before,
+.film:after{
+  position: absolute;
+  content: "";
+  transition: all 0.65s;
+}
+
+.film:before{
+  border-bottom: 2px solid rgb(255, 196, 4);
+  border-left: 2px solid rgb(255, 196, 4);
+  width: 10%;
+  height: 33%;
+  left: -10px;
+  bottom: -10px;
+}
+
+.film:after{
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  width: 10%;
+  height: 33%;
+  top: -10px;
+  right: -10px;
+}
+
+.film:hover:before{
+  width: 112%;
+  height: 140%;
+}
+
+.film:hover:after{
+  width: 112%;
+  height: 140%;
+
+}
+.film:hover{
+  background-color: ivory;
+  color: black;
+  transition: 0.55s;
+  transform: translateX(0%);
+}
+
+
+.trailer{
+  position: fixed;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clip{
+  display: block;
+  justify-content: center;
+  width: 150px;
+  line-height: 20px;
+  background: rgb(255, 196, 4);
+  text-align: center;
+  text-decoration: none;
+  color: rgb(19, 1, 1);
+  font-size: 13.5px;
+  font-weight: 730;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+top: -10px;
+}
+
+.clip:before,
+.clip:after{
+  position: absolute;
+  content: "";
+  transition: all 0.65s;
+}
+
+.clip:before{
+  border-bottom: 2px solid rgb(255, 196, 4);
+  border-left: 2px solid rgb(255, 196, 4);
+  width: 10%;
+  height: 33%;
+  left: -10px;
+  bottom: -10px;
+}
+
+.clip:after{
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  width: 10%;
+  height: 33%;
+  top: -10px;
+  right: -10px;
+}
+
+.clip:hover:before{
+  width: 112%;
+  height: 140%;
+}
+
+.clip:hover:after{
+  width: 112%;
+  height: 140%;
+
+}
+.clip:hover{
+  background-color: ivory;
+  color: black;
+  transition: 0.55s;
+  transform: translateX(0%);
+}
+.name{
+  font-size: 18px;
+  padding-left: 55px;
+  
+}
+.sidenav5 .name{
+  font-size: 11.8px;
+}
+.bar{
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: absolute;
+  width: 2px;
+  height: 5px;
+}
